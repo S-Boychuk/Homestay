@@ -17,8 +17,135 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+        <div class="container-large">
+            <nav class="site-nav">
+                <a class="logo" href="./index.html" aria-label="Homepage">
+                    <svg class="logo-icon" width="258" height="61">
+                        <use href="./img/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <ul class="nav-list list">
+                    <li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#">Room</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#">Facility</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container-large ">
+                <div class="hero-content">
+                    <h1 class="hero-title">Find your perfect place to stay</h1>
+                    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
+                        volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="container-small contact-container">
+                <div>
+                    <img class="contact-img" src="./img/contact-img.jpg" alt="Hotel territory" width="600" height="540">
+                    <h2 class="visually-hidden">Contact us</h2>
+                    <div class="contact-info">
+                        <address class="contact-group">
+                            <h3 class="contact-subtitle">Surabaya</h3>
+                            <ul class="contact-list list">
+                                <li class="contact-item">
+                                    <a class="contact-link link" href="tel:123-456-789">
+                                        <svg class="contact-icon" width="24" height="24">
+                                            <use href="./img/symbol-defs.svg#icon-phone"></use>
+                                        </svg>
+                                        123-456-789
+                                    </a>
+                                </li>
+                                <li class="contact-item">
+                                    <a class="contact-link link" href="https://maps.app.goo.gl/HRkiNJYNSP5ocJUy6"
+                                        target="_blank" title="Google maps" rel="noopener nofollow noreferrer">
+                                        <svg class="contact-icon" width="24" height="36">
+                                            <use href="./img/symbol-defs.svg#icon-mask"></use>
+                                        </svg>
+                                        Jl. Danau Jonge 12, Mayjend Sungkono, Surabaya
+                                    </a>
+                                </li>
+                                <li class="contact-item">
+                                    <a class="contact-link link" href="mailto:HumaStay@gmail.com">
+                                        <svg class="contact-icon" width="24" height="23">
+                                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                                        </svg>
+                                        HumaStay@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                        <address class="contact-group">
+                            <h3 class="contact-subtitle">Malang</h3>
+                            <ul class="contact-list list">
+                                <li class="contact-item">
+                                    <a class="contact-link link" href="tel:123-456-789">
+                                        <svg class="contact-icon" width="24" height="24">
+                                            <use href="./img/symbol-defs.svg#icon-phone"></use>
+                                        </svg>
+                                        123-456-789
+                                    </a>
+                                </li>
+                                <li class="contact-item">
+                                    <a class="contact-link link" href="https://maps.app.goo.gl/HRkiNJYNSP5ocJUy6"
+                                        target="_blank" title="Google maps" rel="noopener nofollow noreferrer">
+                                        <svg class="contact-icon" width="24" height="36">
+                                            <use href="./img/symbol-defs.svg#icon-mask"></use>
+                                        </svg>
+                                        Jl. Danau Jonge 12, Mayjend Sungkono, Malang
+                                    </a>
+                                </li>
+                                <li class="contact-item">
+                                    <a class="contact-link link" href="mailto:HumaStay@gmail.com">
+                                        <svg class="contact-icon" width="24" height="23">
+                                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                                        </svg>
+                                        HumaStay@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+                <div>
+                    <div class="form-container">
+                        <h3 class="contact-form-title">Contact us</h3>
+                        <form class="contact-form">
+                            <label class="visually-hidden" for="first-name">First name</label>
+                            <input class="contact-input" id="first-name" type="text" name="user-name"
+                                placeholder="First Name" required>
+                            <label class="visually-hidden" for="last-name">Second name</label>
+                            <input class="contact-input" id="last-name" type="text" name="user-surname"
+                                placeholder="Last Name" required>
+                            <label class="visually-hidden" for="email">Email</label>
+                            <input class="contact-input" id="email" type="email" name="user-email" placeholder="Email"
+                                required>
+                            <label class="visually-hidden" for="phone-number">Phone Number</label>
+                            <input class="contact-input" id="phone-number" type="tel" name="user-tel"
+                                placeholder="Phone Number" required>
+                            <label class="visually-hidden" for="message">Your message</label>
+                            <textarea id="message" class="contact-textarea" name="user-message"
+                                placeholder="Write your message.."></textarea>
+                            <button class="contact-btn" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="overlay-content">
+                    <p class="text-green">Get in touch — </p>
+                    <p class="text-white">For More Information</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
