@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homestay</title>
+    <title>HumaStay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,10 +26,10 @@
                     </svg>
                 </a>
                 <ul class="nav-list list">
-                    <li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="#">Room</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="#">Facility</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#room">Room</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="#facility">Facility</a></li>
                     <li class="nav-item"><a class="nav-link link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -57,7 +57,7 @@
                             <ul class="contact-list list">
                                 <li class="contact-item">
                                     <a class="contact-link link" href="tel:123-456-789">
-                                        <svg class="contact-icon" width="24" height="24">
+                                        <svg class="contact-icon" width="24" height="24" aria-hidden="true">
                                             <use href="./img/symbol-defs.svg#icon-phone"></use>
                                         </svg>
                                         123-456-789
@@ -66,7 +66,7 @@
                                 <li class="contact-item">
                                     <a class="contact-link link" href="https://maps.app.goo.gl/HRkiNJYNSP5ocJUy6"
                                         target="_blank" title="Google maps" rel="noopener nofollow noreferrer">
-                                        <svg class="contact-icon" width="24" height="36">
+                                        <svg class="contact-icon" width="24" height="36" aria-hidden="true">
                                             <use href="./img/symbol-defs.svg#icon-mask"></use>
                                         </svg>
                                         Jl. Danau Jonge 12, Mayjend Sungkono, Surabaya
@@ -74,7 +74,7 @@
                                 </li>
                                 <li class="contact-item">
                                     <a class="contact-link link" href="mailto:HumaStay@gmail.com">
-                                        <svg class="contact-icon" width="24" height="23">
+                                        <svg class="contact-icon" width="24" height="23" aria-hidden="true">
                                             <use href="./img/symbol-defs.svg#icon-email"></use>
                                         </svg>
                                         HumaStay@gmail.com
@@ -87,7 +87,7 @@
                             <ul class="contact-list list">
                                 <li class="contact-item">
                                     <a class="contact-link link" href="tel:123-456-789">
-                                        <svg class="contact-icon" width="24" height="24">
+                                        <svg class="contact-icon" width="24" height="24" aria-hidden="true">
                                             <use href="./img/symbol-defs.svg#icon-phone"></use>
                                         </svg>
                                         123-456-789
@@ -96,7 +96,7 @@
                                 <li class="contact-item">
                                     <a class="contact-link link" href="https://maps.app.goo.gl/HRkiNJYNSP5ocJUy6"
                                         target="_blank" title="Google maps" rel="noopener nofollow noreferrer">
-                                        <svg class="contact-icon" width="24" height="36">
+                                        <svg class="contact-icon" width="24" height="36" aria-hidden="true">
                                             <use href="./img/symbol-defs.svg#icon-mask"></use>
                                         </svg>
                                         Jl. Danau Jonge 12, Mayjend Sungkono, Malang
@@ -104,7 +104,7 @@
                                 </li>
                                 <li class="contact-item">
                                     <a class="contact-link link" href="mailto:HumaStay@gmail.com">
-                                        <svg class="contact-icon" width="24" height="23">
+                                        <svg class="contact-icon" width="24" height="23" aria-hidden="true">
                                             <use href="./img/symbol-defs.svg#icon-email"></use>
                                         </svg>
                                         HumaStay@gmail.com
@@ -114,28 +114,26 @@
                         </address>
                     </div>
                 </div>
-                <div>
-                    <div class="form-container">
-                        <h3 class="contact-form-title">Contact us</h3>
-                        <form class="contact-form">
-                            <label class="visually-hidden" for="first-name">First name</label>
-                            <input class="contact-input" id="first-name" type="text" name="user-name"
-                                placeholder="First Name" required>
-                            <label class="visually-hidden" for="last-name">Second name</label>
-                            <input class="contact-input" id="last-name" type="text" name="user-surname"
-                                placeholder="Last Name" required>
-                            <label class="visually-hidden" for="email">Email</label>
-                            <input class="contact-input" id="email" type="email" name="user-email" placeholder="Email"
-                                required>
-                            <label class="visually-hidden" for="phone-number">Phone Number</label>
-                            <input class="contact-input" id="phone-number" type="tel" name="user-tel"
-                                placeholder="Phone Number" required>
-                            <label class="visually-hidden" for="message">Your message</label>
-                            <textarea id="message" class="contact-textarea" name="user-message"
-                                placeholder="Write your message.."></textarea>
-                            <button class="contact-btn" type="submit">Send Message</button>
-                        </form>
-                    </div>
+                <div class="form-container">
+                    <h3 class="contact-form-title">Contact us</h3>
+                    <form class="contact-form">
+                        <label class="visually-hidden" for="first-name">First name</label>
+                        <input class="contact-input" id="first-name" type="text" name="user-name"
+                            placeholder="First Name" required>
+                        <label class="visually-hidden" for="last-name">Second name</label>
+                        <input class="contact-input" id="last-name" type="text" name="user-surname"
+                            placeholder="Last Name" required>
+                        <label class="visually-hidden" for="email">Email</label>
+                        <input class="contact-input" id="email" type="email" name="user-email" placeholder="Email"
+                            required>
+                        <label class="visually-hidden" for="phone-number">Phone Number</label>
+                        <input class="contact-input" id="phone-number" type="tel" name="user-tel"
+                            placeholder="Phone Number" required>
+                        <label class="visually-hidden" for="message">Your message</label>
+                        <textarea id="message" class="contact-textarea" name="user-message"
+                            placeholder="Write your message.."></textarea>
+                        <button class="contact-btn" type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
             <div class="overlay">
@@ -146,7 +144,77 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container-small footer-container">
+            <div class="subscribe-container">
+                <a class="logo" href="./index.html" aria-label="Homepage">
+                    <svg class="logo-icon" width="258" height="61">
+                        <use href="./img/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <p class="footer-text">Stay up to date with the latest news, announcements, and articles...</p>
+                <form class="footer-form">
+                    <label class="visually-hidden" for="subscribe">Subscribe</label>
+                    <input class="footer-input" id="subscribe" type="email" name="subscribe-email"
+                        placeholder="Subscribe" required>
+                    <button class="footer-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="link-container">
+                <nav aria-label="Quick links">
+                    <h3 class="footer-list-title">Quick Links</h3>
+                    <ul class="footer-list list">
+                        <li class="footer-item">
+                            <a class="footer-link link" href="./index.html">Home</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#about">About Us</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#room">Home Stay</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="Our services">
+                    <h3 class="footer-list-title">Our Services</h3>
+                    <ul class="footer-list list">
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Custom Room</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Property Management</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Security Guarantee</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Sketch House</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="Legal">
+                    <h3 class="footer-list-title">Legal</h3>
+                    <ul class="footer-list list">
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Return Policy</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Shipping Policy</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link link" href="#">Terms of Services</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
