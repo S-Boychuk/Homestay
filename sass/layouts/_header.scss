@@ -1,0 +1,35 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 12px 0;
+}
+
+.site-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-list {
+	display: flex;
+	gap: 19px;
+	align-items: center;
+}
+
+.nav-item {
+	min-width: 100px;
+}
+
+.nav-link {
+	font-size: 18px;
+	line-height: 1.56;
+	color: var(--secondary-color);
+
+	transition: color var(--transition-base);
+
+	&:hover,
+	&.nav-link:focus {
+		color: var(--primary-color);
+	}
+}

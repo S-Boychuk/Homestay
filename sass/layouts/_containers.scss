@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as mx;
+
+.container-large {
+	@include mx.container-base;
+	max-width: 1350px;
+}
+
+.container-small {
+	@include mx.container-base;
+	max-width: 1230px;
+}
